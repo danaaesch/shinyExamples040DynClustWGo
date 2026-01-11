@@ -34,10 +34,10 @@ server <- function(input, output, session) {
   # Add points on plot click
   observeEvent(input$plot_click, {
     click <- input$plot_click
-    isolate({
+    # isolate({
       rv$x <- c(rv$x, click$x)
       rv$y <- c(rv$y, click$y)
-    })
+    # })
   })
 
   # Clear everything
